@@ -2,44 +2,51 @@
   <content>
     <h6 class="title">Project</h6>
 
-    <div class="grid sm:grid-cols-2 gap-6 mb-12">
-      <div
-        class="card cursor-pointer dark:bg-gray-900"
-        v-for="item in projects"
-        :key="item.slug"
-      >
-        <div class="card-body dark:p-0">
-          <img
-            :src="item.thumbnail"
-            class="img-fluid img-fit mb-4 rounded-lg"
-            alt=""
-          />
-          <p class="font-semibold mb-3">{{ item.name }}</p>
-          <p class="text-sm text-gray-600 dark:text-gray-300">
-            {{ item.description }}
-          </p>
-        </div>
-      </div>
+    <div class="grid-project">
+      <project-card :data="projects" />
     </div>
 
     <div class="text-center">
-      <a
-        href=""
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      <router-link :to="{ name: 'project.index' }" class="btn-primary"
         >More Projects
-      </a>
+      </router-link>
     </div>
   </content>
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { ref } from "vue";
 import Content from "./Content.vue";
-import { getProjects } from "./../composables/getProjects.js";
+import ProjectCard from "./ProjectCard.vue";
 
-const projects = computed(() => {
-  return getProjects.splice(0, 6);
-});
+const data = ref([
+  {
+    slug: "online-learning-guruinovatif",
+    name: "Online Learning Guruinovatif.id",
+    description: "Laravel 9, Tailwind CSS, Alpine.js, MySQL, Livewire",
+    thumbnail: "/img/project/gi.PNG",
+  },
+  {
+    slug: "website-donasi-online-ychi",
+    name: "Website Donasi Online YCHI",
+    description: "Laravel 10, Bootstrap 5, MySQL, Livewire",
+    thumbnail: "/img/project/ychi.PNG",
+  },
+  {
+    slug: "ebook-platform-bariskoding",
+    name: "E-Book Platform bariskoding.com",
+    description: "Laravel 10, Inertia.js, Vue.js, Tailwind CSS, MySQL",
+    thumbnail: "/img/project/bariskoding.PNG",
+  },
+  {
+    slug: "mitra-management-system-slimsure",
+    name: "Mitra Point Management System Slimsure",
+    description: "Laravel 9, Bootstrap 5, MySQL, Admin LTE",
+    thumbnail: "/img/project/slimsure.PNG",
+  },
+]);
+
+const projects = data.value;
 </script>
 
 <style></style>

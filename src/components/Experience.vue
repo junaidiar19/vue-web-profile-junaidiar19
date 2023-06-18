@@ -11,46 +11,30 @@
         </span>
         <div>
           <time
-            class="flex items-center gap-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 mb-1"
+            class="flex items-center gap-1 text-sm font-normal lead-none text-gray-500 dark:text-gray-500 mb-1"
           >
             <span>{{ item.from }}</span>
             <span>&bullet;</span>
             <span>{{ item.until }}</span>
           </time>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
             {{ item.name }}
           </h3>
-          <p
-            class="mb-4 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400"
-          >
-            {{ item.description }}
+          <p class="mb-1 text-sm text-gray-700 dark:text-gray-300">
+            Activities & Achivement:
           </p>
+          <ul class="grid gap-y-1 pl-2">
+            <li
+              v-for="i in item.activity"
+              :key="i"
+              class="dark:text-gray-400 text-sm"
+            >
+              - {{ i }}
+            </li>
+          </ul>
         </div>
       </li>
     </ol>
-
-    <!-- <ol class="relative border-l border-gray-300 dark:border-gray-700">
-      <li class="mb-10 ml-4" v-for="item in experiences" :key="item">
-        <div
-          class="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border-4 border-blue-600 dark:border-gray-900 dark:bg-gray-700"
-        ></div>
-        <time
-          class="flex items-center gap-1 mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 mb-1"
-        >
-          <span>{{ item.from }}</span>
-          <span>&bullet;</span>
-          <span>{{ item.until }}</span>
-        </time>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
-          {{ item.name }}
-        </h3>
-        <p
-          class="mb-4 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400"
-        >
-          {{ item.description }}
-        </p>
-      </li>
-    </ol> -->
   </content>
 </template>
 
@@ -64,44 +48,70 @@ const data = ref([
     from: "Feb 2023",
     until: "Present",
     logo: "/img/logo/bariskoding.jpg",
-    description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    activity: [
+      "Create Tutorial Article",
+      "Create E-Book Laravel Fundamental",
+      "Create E-Book Vue.js",
+      "Create E-Book Bootstrap",
+      "Create Content of Coding",
+    ],
   },
   {
     name: "Head of Programmer at Digitaliz Yayasan Hasnur Centre",
     from: "Okt 2019",
     until: "Present",
     logo: "/img/logo/digitaliz.png",
-    description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    activity: [
+      "Lead the Development Team",
+      "Research & Development",
+      "Create SOP for Developers Team",
+      "Create Coding Lessons Program for Developers Team",
+    ],
   },
   {
     name: "CTO (Chief of Technology) at veldeva.id",
     from: "Jan 2023",
     until: "Present",
     logo: "/img/logo/veldeva.svg",
-    description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    activity: [
+      "Lead the Development Team",
+      "Create Online Course: Membangun Website Donasi Online Menggunakan Laravel",
+    ],
   },
   {
     name: "Technical Leader at guruinovatif.id",
     from: "Apr 2020",
     until: "Present",
     logo: "/img/logo/icon.ico",
-    description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    activity: [
+      "Lead the Development Team",
+      "Developing Platform Guruinovatif.id 3.0",
+      "Design Software Architecture",
+      "Technical Consultant",
+    ],
+  },
+  {
+    name: "Freelance Web Developer TNYI (The New You Institute)",
+    from: "Jan 2021",
+    until: "April 2022",
+    logo: "/img/logo/tnyi.png",
+    activity: [
+      "Developing platform Learning Management System",
+      "Collaboration With Developer Team",
+    ],
   },
   {
     name: "Web Developer Digitaliz",
     from: "Okt 2019",
     until: "Okt 2021",
     logo: "/img/logo/digitaliz.png",
-    description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    activity: [
+      "Developing platform web based for All Unit Yayasan Hasnur Centre",
+      "Developing platform guruinovatif.id",
+      "Best Employee of The Year 2021",
+    ],
   },
 ]);
 
 const experiences = data.value;
 </script>
-
-<style></style>

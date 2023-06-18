@@ -2,7 +2,7 @@
   <content>
     <h6 class="font-semibold mb-6">Skills</h6>
 
-    <div class="grid gap-x-4 sm:gap-y-6 grid-cols-2 sm:grid-cols-5">
+    <div class="grid gap-2 sm:gap-x-4 sm:gap-y-6 grid-cols-2 sm:grid-cols-5">
       <div class="card" v-for="item in skills" :key="item">
         <div class="card-body text-center">
           <div class="skill-image" v-html="item.image"></div>
@@ -92,6 +92,26 @@ const data = ref([
     image:
       '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />',
     name: "VS Code",
+  },
+  {
+    image: '<img src="/img/logo/laravel-livewire.png" />',
+    name: "Livewire",
+  },
+  {
+    image: '<img src="/img/logo/inertia.png" class="rounded-md" />',
+    name: "Inertia.js",
+  },
+  {
+    image: '<img src="/img/logo/materialize-logo.png" />',
+    name: "Materialize",
+  },
+  {
+    image: '<img src="/img/logo/alpine.webp" class="rounded-md" />',
+    name: "Alpine.js",
+  },
+  {
+    image: '<img src="/img/logo/vite.svg" />',
+    name: "Vite.js",
   },
 ]);
 

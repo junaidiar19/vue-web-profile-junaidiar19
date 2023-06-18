@@ -8,7 +8,7 @@ body {
 }
 
 .container-custom {
-  @apply px-8 sm:px-6 max-w-3xl lg:max-w-3xl 2xl:max-w-4xl mx-auto;
+  @apply px-5 sm:px-6 max-w-3xl lg:max-w-3xl 2xl:max-w-4xl mx-auto;
 }
 
 .card {
@@ -33,4 +33,20 @@ body {
 
 .img-fit {
   @apply object-cover aspect-video;
+}
+
+nav .nav-link {
+  @apply font-medium text-gray-500 hover:text-gray-700 text-sm dark:text-gray-400;
+}
+
+nav .nav-link.active {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.grid-project {
+  @apply grid sm:grid-cols-2 gap-6 mb-12;
+}
+
+.btn-primary {
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-0 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800;
 }

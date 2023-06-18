@@ -1,25 +1,29 @@
 <template>
-  <nav class="fixed w-full py-4 bg-white dark:bg-gray-900 shadow-sm z-20">
-    <div class="container-custom">
-      <div class="flex items-center justify-between">
-        <div class="hidden sm:block">
-          <ul class="flex gap-6">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">All Projects</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <span
-            class="h-10 w-10 rounded-full transition hover:bg-gray-100 dark:hover:bg-gray-800 p-3 inline-flex justify-center items-center cursor-pointer"
-            @click="toggleTheme"
-          >
-            <i class="fe" :class="dark ? 'fe-sun' : 'fe-moon'"></i>
-          </span>
-        </div>
+  <nav
+    class="w-full py-2 dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800"
+  >
+    <div class="flex items-center justify-between">
+      <div>
+        <ul class="flex gap-6">
+          <li>
+            <router-link :to="{ name: 'home' }" class="nav-link"
+              >Home</router-link
+            >
+          </li>
+          <li>
+            <router-link :to="{ name: 'project.index' }" class="nav-link"
+              >All Project</router-link
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span
+          class="h-10 w-10 rounded-full transition hover:bg-gray-100 dark:hover:bg-gray-900 p-3 inline-flex justify-center items-center cursor-pointer"
+          @click="toggleTheme"
+        >
+          <i class="fe" :class="dark ? 'fe-sun' : 'fe-moon'"></i>
+        </span>
       </div>
     </div>
   </nav>
@@ -29,7 +33,7 @@
 import { ref, onMounted } from "vue";
 
 // Dark Mode
-const dark = ref(false);
+const dark = ref(true);
 
 const toggleTheme = () => {
   dark.value = !dark.value;
@@ -42,19 +46,19 @@ const toggleTheme = () => {
   }
 };
 
-onMounted(() => {
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    dark.value = true;
-    document.documentElement.classList.add("dark");
-  } else {
-    dark.value = false;
-    document.documentElement.classList.remove("dark");
-  }
-});
+// onMounted(() => {
+//   if (
+//     localStorage.theme === "dark" ||
+//     (!("theme" in localStorage) &&
+//       window.matchMedia("(prefers-color-scheme: dark)").matches)
+//   ) {
+//     dark.value = true;
+//     document.documentElement.classList.add("dark");
+//   } else {
+//     dark.value = false;
+//     document.documentElement.classList.remove("dark");
+//   }
+// });
 </script>
 
 <style></style>
