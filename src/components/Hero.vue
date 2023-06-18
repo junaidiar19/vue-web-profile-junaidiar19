@@ -1,6 +1,6 @@
 <template>
-  <content>
-    <div class="flex items-top gap-4 sm:gap-6 mb-6">
+  <content class="pt-0 sm:pt-6">
+    <div class="flex items-top gap-4 sm:gap-6 mb-0 sm:mb-4">
       <div>
         <img
           src="/img/profile-1.jpg"
