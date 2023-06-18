@@ -3,7 +3,7 @@
     <h6 class="font-semibold mb-6">Skills</h6>
 
     <div class="grid gap-2 sm:gap-x-4 sm:gap-y-6 grid-cols-2 sm:grid-cols-5">
-      <div class="card" v-for="item in skills" :key="item">
+      <div class="card" v-for="item in skills" :key="item" data-aos="fade-up">
         <div class="card-body text-center">
           <div class="skill-image" v-html="item.image"></div>
           <p class="font-medium sm:text-sm text-xs">{{ item.name }}</p>

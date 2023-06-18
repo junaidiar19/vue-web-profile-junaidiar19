@@ -6,7 +6,7 @@
       <project-card :data="projects" />
     </div>
 
-    <div class="text-center">
+    <div class="text-center" data-aos="fade-up">
       <router-link :to="{ name: 'project.index' }" class="btn-primary"
         >More Projects
       </router-link>

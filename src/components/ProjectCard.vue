@@ -1,5 +1,6 @@
 <template>
   <div
+    data-aos="fade-up"
     class="flex self-stretch card dark:bg-gray-900"
     v-for="item in props.data"
     :key="item.slug"

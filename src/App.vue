@@ -22,7 +22,7 @@ import ScrollTop from "./components/ScrollTop.vue";
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.1s;
+  transition: opacity 0.05s;
 }
 
 .fade-enter,

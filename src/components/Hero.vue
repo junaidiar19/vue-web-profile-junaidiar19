@@ -20,19 +20,21 @@
       </div>
     </div>
 
-    <div class="leading-relaxed text-sm sm:text-base mb-6">
+    <div class="leading-relaxed text-sm sm:text-base mb-6" data-aos="fade-up">
       Saya seorang web developer dengan pengalaman lebih dari 3 tahun. Sebagai
       developer saya memiliki keterampilan dalam mengembangkan platform
       menggunakan Laravel, Vue.js, MySQL & Tailwind CSS. Saya sering bekerja
       sama dengan tim dan pernah dipercaya untuk membangun tim IT pada salah
       satu Start Up Edutech Indonesia.
     </div>
-    <a
-      href="/files/cv-junaidi-abdul-rahman.pdf"
-      target="_blank"
-      class="btn-primary"
-      >Download CV</a
-    >
+    <div data-aos="fade-up" data-aos-delay="50">
+      <a
+        href="/files/cv-junaidi-abdul-rahman.pdf"
+        target="_blank"
+        class="btn-primary"
+        >Download CV</a
+      >
+    </div>
   </content>
 </template>
 

@@ -9,7 +9,7 @@
         >
           <img class="rounded-full" :src="item.logo" alt="Bonnie image" />
         </span>
-        <div>
+        <div data-aos="fade-up">
           <time
             class="flex items-center gap-1 text-sm font-normal lead-none text-gray-500 dark:text-gray-500 mb-1"
           >

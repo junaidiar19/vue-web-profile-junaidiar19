@@ -7,31 +7,33 @@
         <div
           class="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border-4 border-blue-600 dark:border-gray-500 dark:bg-gray-900"
         ></div>
-        <time
-          class="flex items-center gap-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 mb-1"
-        >
-          <span>{{ item.from }}</span>
-          <span>&bullet;</span>
-          <span>{{ item.until }}</span>
-        </time>
-        <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
-          {{ item.name }}
-        </h3>
-        <p class="mb-2">{{ item.major }}</p>
-        <p
-          class="mb-1 text-sm sm:text-base font-medium text-gray-700 dark:text-gray-200"
-        >
-          Activities:
-        </p>
-        <ul class="grid gap-y-1 pl-2">
-          <li
-            v-for="i in item.activity"
-            :key="i"
-            class="dark:text-gray-400 text-sm"
+        <div data-aos="fade-up">
+          <time
+            class="flex items-center gap-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-500 mb-1"
           >
-            - {{ i }}
-          </li>
-        </ul>
+            <span>{{ item.from }}</span>
+            <span>&bullet;</span>
+            <span>{{ item.until }}</span>
+          </time>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1">
+            {{ item.name }}
+          </h3>
+          <p class="mb-2">{{ item.major }}</p>
+          <p
+            class="mb-1 text-sm sm:text-base font-medium text-gray-700 dark:text-gray-200"
+          >
+            Activities:
+          </p>
+          <ul class="grid gap-y-1 pl-2">
+            <li
+              v-for="i in item.activity"
+              :key="i"
+              class="dark:text-gray-400 text-sm"
+            >
+              - {{ i }}
+            </li>
+          </ul>
+        </div>
       </li>
     </ol>
   </content>
