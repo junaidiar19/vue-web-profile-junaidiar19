@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200;
+}
+
+.container-custom {
+  @apply px-8 sm:px-6 max-w-3xl lg:max-w-3xl 2xl:max-w-4xl mx-auto;
+}
+
+.card {
+  @apply bg-white shadow-sm hover:shadow-lg transition rounded-lg flex flex-col overflow-hidden relative break-words dark:bg-slate-700;
+}
+
+.card>.card-body {
+  @apply p-4;
+}
+
+.skill-image > img {
+  @apply h-6 sm:h-10 w-auto mx-auto mb-2;
+}
+
+.title {
+  @apply font-semibold mb-6;
+}
+
+.img-fluid {
+  @apply h-auto max-w-full;
+}
+
+.img-fit {
+  @apply object-cover aspect-video;
+}
