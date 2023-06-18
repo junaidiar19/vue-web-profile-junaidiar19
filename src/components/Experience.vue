@@ -81,7 +81,7 @@ const data = ref([
     ],
   },
   {
-    name: "CTO (Chief of Technology) at veldeva.id",
+    name: "Chief Technology Officer (CTO) of Veldeva.id",
     from: "Jan 2023",
     until: "Present",
     logo: "/img/logo/veldeva.svg",
