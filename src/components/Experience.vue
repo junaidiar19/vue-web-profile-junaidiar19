@@ -44,6 +44,18 @@ import Content from "./Content.vue";
 
 const data = ref([
   {
+    name: "Mentor Web Developer Program MSIB Kemendikbud RI",
+    from: "Agustus 2021",
+    until: "Present",
+    logo: "/img/logo/msib.jpeg",
+    activity: [
+      "Mentoring Magang",
+      "Create Coding Modul",
+      "Teaching About Coding",
+      "Trusted to be a mentor from batch 1 to 4",
+    ],
+  },
+  {
     name: "Content Creator & Founder at bariskoding.com",
     from: "Feb 2023",
     until: "Present",

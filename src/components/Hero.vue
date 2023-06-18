@@ -24,8 +24,8 @@
       Saya seorang web developer dengan pengalaman lebih dari 3 tahun. Sebagai
       developer saya memiliki keterampilan dalam mengembangkan platform
       menggunakan Laravel, Vue.js, MySQL & Tailwind CSS. Saya sering bekerja
-      sama dengan tim dan pernah dipercaya untuk membangun tim IT pada salah
-      satu Start Up Edutech Indonesia.
+      dengan tim dan pernah dipercaya untuk membangun tim IT pada salah satu
+      Start Up Edutech Indonesia.
     </div>
     <div data-aos="fade-up" data-aos-delay="50">
       <a
