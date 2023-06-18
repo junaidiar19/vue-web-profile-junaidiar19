@@ -49,9 +49,9 @@ const data = ref([
     until: "Present",
     logo: "/img/logo/msib.jpeg",
     activity: [
-      "Mentoring Magang",
+      "Coding Mentor",
+      "Project Management Mentor",
       "Create Coding Modul",
-      "Teaching About Coding",
       "Trusted to be a mentor from batch 1 to 4",
     ],
   },
