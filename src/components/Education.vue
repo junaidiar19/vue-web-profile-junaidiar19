@@ -59,7 +59,7 @@ const data = ref([
   {
     name: "SMKN 1 Batumandi",
     major: "Teknik Komputer & Jaringan",
-    from: "2014",
+    from: "2013",
     until: "2016",
     activity: [
       "Pasukan 7 PASKIBRAKA Kab. Balangan",

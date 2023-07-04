@@ -56,7 +56,7 @@ const data = ref([
     ],
   },
   {
-    name: "Content Creator & Founder at bariskoding.com",
+    name: "Content Creator at bariskoding.com",
     from: "Feb 2023",
     until: "Present",
     logo: "/img/logo/bariskoding.jpg",
@@ -65,7 +65,7 @@ const data = ref([
       "Create E-Book Laravel Fundamental",
       "Create E-Book Vue.js",
       "Create E-Book Bootstrap",
-      "Create Content of Coding",
+      "Create Content About Coding",
     ],
   },
   {
@@ -78,16 +78,18 @@ const data = ref([
       "Research & Development",
       "Create SOP for Developers Team",
       "Create Coding Lessons Program for Developers Team",
+      "Working on: Laravel, Vue.js, Tailwind CSS, Livewire, Inertia.js, MySQL",
     ],
   },
   {
-    name: "Chief Technology Officer (CTO) of Veldeva.id",
+    name: "Project Leader & Content Creator of veldeva.id",
     from: "Jan 2023",
     until: "Present",
     logo: "/img/logo/veldeva.svg",
     activity: [
       "Lead the Development Team",
       "Create Online Course: Membangun Website Donasi Online Menggunakan Laravel",
+      "Speaker of Mini Class Session: About Laravel Topic",
     ],
   },
   {
@@ -100,6 +102,7 @@ const data = ref([
       "Developing Platform Guruinovatif.id 3.0",
       "Design Software Architecture",
       "Technical Consultant",
+      "Working on: Laravel, Tailwind CSS, Alpine.js, Livewire, Payment Gateway, WhatsApp Notification",
     ],
   },
   {
@@ -110,6 +113,7 @@ const data = ref([
     activity: [
       "Developing platform Learning Management System",
       "Collaboration With Developer Team",
+      "Working on: Frontend & Backend (Laravel)",
     ],
   },
   {
