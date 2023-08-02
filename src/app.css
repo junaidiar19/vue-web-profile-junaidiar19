@@ -12,7 +12,7 @@ body {
 }
 
 .card {
-  @apply bg-white shadow-sm hover:shadow-lg transition rounded-lg flex flex-col overflow-hidden relative break-words dark:bg-slate-700;
+  @apply bg-white shadow-sm hover:shadow-lg border border-transparent transition rounded-lg flex flex-col overflow-hidden relative break-words dark:bg-slate-700;
 }
 
 .card>.card-body {
