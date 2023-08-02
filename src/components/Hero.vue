@@ -3,7 +3,7 @@
     <div class="flex items-top gap-4 sm:gap-6 mb-0 sm:mb-4">
       <div>
         <img
-          src="/img/profile-1.jpg"
+          src="/img/profile-pic-3.png"
           class="h-20 w-20 sm:h-28 sm:w-28 object-cover rounded-lg sm:rounded-lg shadow-md mb-3"
           alt=""
         />
