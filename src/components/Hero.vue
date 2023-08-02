@@ -25,7 +25,7 @@
       {{ experienceYears }} tahun. Sebagai developer saya memiliki keterampilan
       dalam mengembangkan platform menggunakan Laravel, Vue.js, MySQL & Tailwind
       CSS. Saya sering bekerja dengan tim dan pernah dipercaya untuk membangun &
-      memimpin tim IT pada salah satu Start Up Edutech Indonesia.
+      memimpin tim IT pada salah satu Start Up Edutech Indonesia di Yogyakarta.
     </div>
     <div data-aos="fade-up" data-aos-delay="50">
       <a

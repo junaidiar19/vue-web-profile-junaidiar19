@@ -1,9 +1,9 @@
 <template>
   <div>
     <Hero />
+    <Project />
     <Skills />
     <Experience />
-    <Project />
     <Education />
   </div>
 </template>
