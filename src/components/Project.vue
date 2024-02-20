@@ -17,36 +17,12 @@
 <script setup>
 import { ref } from "vue";
 import Content from "./Content.vue";
+import { getProjects } from "../composables/getProjects";
 import ProjectCard from "./ProjectCard.vue";
 
-const data = ref([
-  {
-    slug: "online-learning-guruinovatif",
-    name: "Online Learning Guruinovatif.id",
-    description: "Laravel 9, Tailwind CSS, Alpine.js, MySQL, Livewire",
-    thumbnail: "/img/project/gi.PNG",
-  },
-  {
-    slug: "website-donasi-online-ychi",
-    name: "Website Donasi Online YCHI",
-    description: "Laravel 10, Bootstrap 5, MySQL, Livewire",
-    thumbnail: "/img/project/ychi.PNG",
-  },
-  {
-    slug: "ebook-platform-bariskoding",
-    name: "E-Book Platform bariskoding.com",
-    description: "Laravel 10, Inertia.js, Vue.js, Tailwind CSS, MySQL",
-    thumbnail: "/img/project/bariskoding.PNG",
-  },
-  {
-    slug: "mitra-management-system-slimsure",
-    name: "Mitra Point Management System Slimsure",
-    description: "Laravel 9, Bootstrap 5, MySQL, Admin LTE",
-    thumbnail: "/img/project/slimsure.PNG",
-  },
-]);
+// limit the number of projects to display
+const limit = 4;
 
+const data = ref(getProjects.slice(0, limit));
 const projects = data.value;
 </script>
-
-<style></style>
