@@ -1,5 +1,5 @@
 <template>
-  <content>
+  <content id="education">
     <h6 class="title">Education</h6>
 
     <ol class="relative border-l border-gray-300 dark:border-gray-700">

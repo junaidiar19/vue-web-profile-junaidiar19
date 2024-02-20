@@ -15,6 +15,15 @@
               >All Project</router-link
             >
           </li>
+          <li>
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link">Education</a>
+          </li>
         </ul>
       </div>
       <div>

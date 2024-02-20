@@ -30,7 +30,12 @@ const search = ref(null);
 
 const data = ref([
   {
-    name: "Online Learning Guruinovatif.id",
+    name: "Manajemen Stok dan Penjualan Outlet Pisang Keju Haji Kadap",
+    description: "Laravel 10, Bootstrap, Alpine.js, MySQL",
+    thumbnail: "/img/project/hajikadap.png",
+  },
+  {
+    name: "LMS Guruinovatif.id",
     description: "Laravel 9, Tailwind CSS, Alpine.js, MySQL, Livewire",
     thumbnail: "/img/project/gi.PNG",
   },

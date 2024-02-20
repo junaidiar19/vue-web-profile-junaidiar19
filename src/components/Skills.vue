@@ -1,5 +1,5 @@
 <template>
-  <content>
+  <content id="skills">
     <h6 class="font-semibold mb-6">Skills</h6>
 
     <div class="grid gap-2 sm:gap-x-4 sm:gap-y-6 grid-cols-2 sm:grid-cols-5">
@@ -57,7 +57,7 @@ const data = ref([
   },
   {
     image:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />',
+      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" />',
     name: "Laravel",
     url: "https://laravel.com/",
   },
@@ -69,7 +69,7 @@ const data = ref([
   },
   {
     image:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />',
+      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
     name: "MySQL",
     url: "https://www.mysql.com/",
   },
@@ -99,7 +99,7 @@ const data = ref([
   },
   {
     image:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />',
+      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />',
     name: "Tailwind CSS",
     url: "https://tailwindcss.com/",
   },
