@@ -1,8 +1,8 @@
 <template>
   <nav
-    class="w-full py-2 dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800"
+    class="w-full py-2 dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800 fixed"
   >
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between container-custom">
       <div>
         <ul class="flex gap-6">
           <li>
@@ -16,13 +16,16 @@
             >
           </li>
           <li>
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="/#skills" class="nav-link">Skills</a>
           </li>
           <li>
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="/#experience" class="nav-link">Experience</a>
           </li>
           <li>
-            <a href="#education" class="nav-link">Education</a>
+            <a href="/#education" class="nav-link">Education</a>
+          </li>
+          <li>
+            <a href="/#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>

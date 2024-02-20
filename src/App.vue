@@ -1,6 +1,6 @@
 <template>
-  <div class="container-custom">
-    <Header />
+  <Header />
+  <div class="container-custom pt-20">
     <main class="min-h-screen">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">

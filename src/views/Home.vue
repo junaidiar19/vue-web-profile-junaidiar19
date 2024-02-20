@@ -5,6 +5,7 @@
     <Skills />
     <Experience />
     <Education />
+    <Contact />
   </div>
 </template>
 
@@ -14,4 +15,5 @@ import Skills from "./../components/Skills.vue";
 import Experience from "./../components/Experience.vue";
 import Project from "./../components/Project.vue";
 import Education from "./../components/Education.vue";
+import Contact from "../components/Contact.vue";
 </script>
