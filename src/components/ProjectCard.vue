@@ -13,9 +13,13 @@
           alt=""
         />
       </a>
-      <p class="font-semibold mb-3">{{ item.name }}</p>
+      <p class="font-semibold mb-3 line-clamp-2 hover:line-clamp-none">
+        {{ item.name }}
+      </p>
       <div class="mt-auto">
-        <p class="text-sm text-gray-600 dark:text-gray-300">
+        <p
+          class="text-sm text-gray-600 dark:text-gray-300 line-clamp-1 hover:line-clamp-none"
+        >
           {{ item.description }}
         </p>
       </div>

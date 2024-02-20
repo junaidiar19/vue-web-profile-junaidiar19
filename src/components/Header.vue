@@ -3,49 +3,48 @@
     class="w-full py-2 dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800 fixed"
   >
     <div class="flex items-center justify-between container-custom">
-      <div>
+      <div class="hidden sm:block">
         <ul class="flex gap-6">
-          <li>
-            <router-link :to="{ name: 'home' }" class="nav-link"
-              >Home</router-link
-            >
-          </li>
-          <li>
-            <router-link :to="{ name: 'project.index' }" class="nav-link"
-              >All Project</router-link
-            >
-          </li>
-          <li>
-            <a href="/#skills" class="nav-link">Skills</a>
-          </li>
-          <li>
-            <a href="/#experience" class="nav-link">Experience</a>
-          </li>
-          <li>
-            <a href="/#education" class="nav-link">Education</a>
-          </li>
-          <li>
-            <a href="/#contact" class="nav-link">Contact</a>
-          </li>
+          <ListMenu />
         </ul>
       </div>
-      <div>
+      <div class="sm:hidden">
         <span
-          class="h-10 w-10 rounded-full transition hover:bg-gray-100 dark:hover:bg-gray-900 p-3 inline-flex justify-center items-center cursor-pointer"
-          @click="toggleTheme"
-        >
+          class="fe icon-toggle -ms-3"
+          :class="menu ? 'fe-x' : 'fe-menu'"
+          @click="toggleMenu"
+        ></span>
+      </div>
+      <div class="sm:hidden">
+        <router-link :to="{ name: 'home' }">Junaidi Abdul Rahman</router-link>
+      </div>
+      <div>
+        <span class="icon-toggle -me-3" @click="toggleTheme">
           <i class="fe" :class="dark ? 'fe-sun' : 'fe-moon'"></i>
         </span>
       </div>
+    </div>
+    <div class="relative sm:hidden" :class="menu ? 'block' : 'hidden'">
+      <ul class="grid px-4 gap-y-2" @click="menu = !menu">
+        <ListMenu />
+      </ul>
     </div>
   </nav>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
+import ListMenu from "./ListMenu.vue";
 
 // Dark Mode
 const dark = ref(true);
+
+// Toggle Menu
+const menu = ref(false);
+
+const toggleMenu = () => {
+  menu.value = !menu.value;
+};
 
 const toggleTheme = () => {
   dark.value = !dark.value;
