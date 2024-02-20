@@ -22,7 +22,7 @@ export const getProjects = [
   {
     name: "Website Goldenmulia.com",
     description: "E-Commerce, API, Verifikasi Serial Number, dll",
-    thumbnail: "/img/project/goldenmulia-frontpage.png",
+    thumbnail: "/img/project/goldenmulia-home.png",
   },
   {
     name: "Dashboard Goldenmulia.com",
