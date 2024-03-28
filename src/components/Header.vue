@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full py-2 dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800 fixed"
+    class="w-full py-2 bg-white dark:bg-gray-900 z-20 mb-8 border-b dark:border-slate-800 fixed"
   >
     <div class="flex items-center justify-between container-custom">
       <div class="hidden sm:block">
